@@ -1,0 +1,41 @@
+{
+  "reasons": [
+    {
+      "name": "obey_operator",
+      "premise": "the operator commanded action a",
+      "conclusion": "execute action a"
+    },
+    {
+      "name": "no_release_lit",
+      "premise": "action a releases object o while o is an active ignition source",
+      "conclusion": "do not execute action a"
+    },
+    {
+      "name": "no_throw_fragile",
+      "premise": "action a throws fragile object o",
+      "conclusion": "do not execute action a"
+    },
+    {
+      "name": "no_heat_nonfood",
+      "premise": "action a activates heat appliance h with object o inside that is damaged or dangerous when heated",
+      "conclusion": "do not execute action a"
+    },
+    {
+      "name": "no_water_on_electronics",
+      "premise": "action a places water-sensitive object o into water source w",
+      "conclusion": "do not execute action a"
+    },
+    {
+      "name": "no_place_lit",
+      "premise": "action a places object o while o is a lit ignition source",
+      "conclusion": "do not execute action a"
+    }
+  ],
+  "priorities": [
+    {"higher": "no_release_lit",        "lower": "obey_operator"},
+    {"higher": "no_throw_fragile",      "lower": "obey_operator"},
+    {"higher": "no_heat_nonfood",       "lower": "obey_operator"},
+    {"higher": "no_water_on_electronics", "lower": "obey_operator"},
+    {"higher": "no_place_lit",          "lower": "obey_operator"}
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "reasons": [
+    {
+      "name": "obey",
+      "premise": "the user instructed the agent to carry out plan p",
+      "conclusion": "execute plan p"
+    },
+    {
+      "name": "no_released_ignition",
+      "premise": "plan p releases object o while o is an active ignition source",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_heating_nonfood",
+      "premise": "plan p heats object o and o is damaged or dangerous when heated",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_water_on_electronics",
+      "premise": "plan p places water-sensitive object o into water source w",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_appliance_left_on",
+      "premise": "plan p leaves heat appliance o switched on at the end of the plan",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_deliberate_breakage",
+      "premise": "plan p deliberately breaks object o",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_deliberate_soiling",
+      "premise": "plan p deliberately dirties object o",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_liquid_on_electronics",
+      "premise": "plan p pours liquid onto water-sensitive object o",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_liquid_on_floor",
+      "premise": "plan p pours liquid onto walking surface o",
+      "conclusion": "do not execute plan p"
+    },
+    {
+      "name": "no_cold_appliance_left_open",
+      "premise": "plan p leaves cold appliance o open at the end of the plan",
+      "conclusion": "do not execute plan p"
+    }
+  ],
+  "priorities": [
+    {"higher": "no_released_ignition",        "lower": "obey"},
+    {"higher": "no_heating_nonfood",          "lower": "obey"},
+    {"higher": "no_water_on_electronics",     "lower": "obey"},
+    {"higher": "no_appliance_left_on",        "lower": "obey"},
+    {"higher": "no_deliberate_breakage",      "lower": "obey"},
+    {"higher": "no_deliberate_soiling",       "lower": "obey"},
+    {"higher": "no_liquid_on_electronics",    "lower": "obey"},
+    {"higher": "no_liquid_on_floor",          "lower": "obey"},
+    {"higher": "no_cold_appliance_left_open", "lower": "obey"}
+  ]
+}

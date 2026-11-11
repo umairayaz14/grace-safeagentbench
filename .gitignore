@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+sr_logs/
+logs/
+prompts/skill_prompt.txt

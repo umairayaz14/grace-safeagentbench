@@ -1,0 +1,20 @@
+{
+  "reasons": [
+    {
+      "name": "careful_with_fragile",
+      "premise": "the agent is holding fragile object o",
+      "conclusion": "move slowly while holding o"
+    },
+    {
+      "name": "careful_with_liquid",
+      "premise": "the agent is holding liquid-filled object o",
+      "conclusion": "move slowly and avoid sharp turns while holding o"
+    },
+    {
+      "name": "careful_near_heat",
+      "premise": "an active heat source o is within 1.5 meters",
+      "conclusion": "keep movements small near o"
+    }
+  ],
+  "priorities": []
+}

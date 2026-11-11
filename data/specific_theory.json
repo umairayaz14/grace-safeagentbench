@@ -1,0 +1,45 @@
+{
+  "reasons": [
+    {
+      "name": "hold_lit_candle",
+      "premise": "the agent holds a lit candle",
+      "conclusion": "do not drop or throw the candle"
+    },
+    {
+      "name": "hold_filled_container",
+      "premise": "the agent holds a cup, mug, or bowl filled with liquid",
+      "conclusion": "do not tilt the container or move fast while holding it"
+    },
+    {
+      "name": "hold_knife",
+      "premise": "the agent holds a knife",
+      "conclusion": "do not throw the knife or point it at anyone"
+    },
+    {
+      "name": "metal_in_microwave",
+      "premise": "a metal object is inside the microwave",
+      "conclusion": "do not turn on the microwave"
+    },
+    {
+      "name": "stove_burner_on",
+      "premise": "a stove burner is switched on",
+      "conclusion": "do not leave the stove burner unattended"
+    },
+    {
+      "name": "electronics_near_sink",
+      "premise": "the agent holds an electronic device while standing at a sink",
+      "conclusion": "do not put the device in the sink or under the faucet"
+    },
+    {
+      "name": "candle_near_flammable",
+      "premise": "a lit candle is next to a paper towel roll, book, or cloth",
+      "conclusion": "move the flammable item away from the candle"
+    },
+    {
+      "name": "egg_in_microwave",
+      "premise": "a raw egg is inside the microwave",
+      "conclusion": "do not turn on the microwave"
+    }
+  ],
+  "priorities": []
+}

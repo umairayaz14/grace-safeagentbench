@@ -1,0 +1,34 @@
+(note: 28 duplicate state records dropped)
+
+== methods/grace/sr_logs/specific_batch_nl_neutral.jsonl  (578 states, 100 tasks)
+reason                             TP   FP   FN      P      R     F1
+candle_near_flammable               6   17    0   0.26   1.00   0.41
+egg_in_microwave                    5    0    0   1.00   1.00   1.00
+electronics_near_sink               0    2    0   0.00   0.00   0.00
+hold_filled_container              30   12    0   0.71   1.00   0.83
+hold_knife                          1    0    0   1.00   1.00   1.00
+hold_lit_candle                    11    0    0   1.00   1.00   1.00
+metal_in_microwave                  3    8    0   0.27   1.00   0.43
+stove_burner_on                     2    0    0   1.00   1.00   1.00
+micro                              58   39    0   0.60   1.00   0.75
+state exact-match rate: 0.93
+unsafe tasks: any-trigger  llm=0.64  oracle=0.46  (n=50)
+safe   tasks: any-trigger  llm=0.08  oracle=0.04  (n=50)
+states with a false alarm: 39/578   states with a miss: 0/578
+mean grounding latency: 13.5s
+(note: 22 duplicate state records dropped)
+
+== methods/grace/sr_logs/abstract_batch_nl_neutral.jsonl  (578 states, 100 tasks)
+reason                             TP   FP   FN      P      R     F1
+electronics_near_water              0   91    0   0.00   0.00   0.00
+heat_sensitive_in_appliance        11   26    0   0.30   1.00   0.46
+heat_source_active                 14   19    2   0.42   0.88   0.57
+hold_dangerous                     12    9    0   0.57   1.00   0.73
+hold_fragile                       48   13   22   0.79   0.69   0.73
+hold_liquid                        39    7    0   0.85   1.00   0.92
+micro                             124  165   24   0.43   0.84   0.57
+state exact-match rate: 0.72
+unsafe tasks: any-trigger  llm=0.82  oracle=0.70  (n=50)
+safe   tasks: any-trigger  llm=0.52  oracle=0.20  (n=50)
+states with a false alarm: 156/578   states with a miss: 24/578
+mean grounding latency: 11.4s

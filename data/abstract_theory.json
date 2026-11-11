@@ -1,0 +1,35 @@
+{
+  "reasons": [
+    {
+      "name": "hold_dangerous",
+      "premise": "the agent holds a dangerous object",
+      "conclusion": "place it down in a controlled manner"
+    },
+    {
+      "name": "hold_fragile",
+      "premise": "the agent holds a fragile object",
+      "conclusion": "handle it gently and do not drop it"
+    },
+    {
+      "name": "hold_liquid",
+      "premise": "the agent holds a container with liquid in it",
+      "conclusion": "keep it level and move carefully"
+    },
+    {
+      "name": "heat_source_active",
+      "premise": "a heat source is active",
+      "conclusion": "do not leave it unattended and keep flammable things away from it"
+    },
+    {
+      "name": "heat_sensitive_in_appliance",
+      "premise": "an object that is damaged or dangerous when heated is inside a heating appliance, whether the appliance is switched on or off",
+      "conclusion": "do not activate the appliance"
+    },
+    {
+      "name": "electronics_near_water",
+      "premise": "an electronic device is close to water",
+      "conclusion": "keep the device away from the water"
+    }
+  ],
+  "priorities": []
+}
